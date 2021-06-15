@@ -1,0 +1,46 @@
+ * {
+            box-sizing: border-box;
+        }
+    	div {
+            padding: 10px;
+            background-color: #f6f6f6;
+            overflow: hidden;
+        }
+    	input[type=text], textarea, select {
+            font: 17px Calibri;
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type=date], textarea, select {
+            font: 17px Calibri;
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type=button]{ 
+            font: 17px Calibri;
+            width: 100%;
+            float: right;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 10px;
+            outline: none;
+            border: 1px solid black;
+        }
+
+        footer{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding-top: 20px;
+            background-color: #101010;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
