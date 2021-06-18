@@ -1,7 +1,9 @@
  * {
             box-sizing: border-box;
+            padding: 0;
+            margin: 0;
         }
-    	div {
+    	.field {
             padding: 10px;
             background-color: #f6f6f6;
             overflow: hidden;
@@ -12,6 +14,7 @@
             padding: 12px;
             border: 1px solid #ccc;
             border-radius: 4px;
+            box-shadow: 0px 0px 10px 2px #000;
         }
         input[type=number], textarea, select {
             font: 17px Calibri;
@@ -19,6 +22,7 @@
             padding: 12px;
             border: 1px solid #ccc;
             border-radius: 4px;
+            box-shadow: 0px 0px 10px 2px #000;
         }
         input[type=date], textarea, select {
             font: 17px Calibri;
@@ -26,6 +30,7 @@
             padding: 12px;
             border: 1px solid #ccc;
             border-radius: 4px;
+            box-shadow: 0px 0px 10px 2px #000;
         }
 
         input[type=button]{ 
@@ -37,17 +42,69 @@
             border-radius: 10px;
             outline: none;
             border: 1px solid black;
+            box-shadow: 0px 0px 10px 2px #000;
         }
-
-        footer{
-            position: absolute;
-            bottom: 0;
+        header{
+            position: relative;
             left: 0;
             right: 0;
-            padding-top: 20px;
             background-color: #101010;
+            color: #fff;
             text-align: center;
             justify-content: center;
-            align-items: center;
-            color: #fff;
+                align-items: center;
+                text-align: center;
+                display: flex
+        }
+        textarea{
+                height: 100px;
+            }
+        
+        @media screen and (max-width: 1024px){
+            header{
+                position: relative;
+                padding-bottom: 20px;
+                padding-top: 20px;
+                margin-bottom: 15px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                display: flex;
+                font-size: 3em
+            }
+            input[type=number], textarea, select {
+            font: 35px Calibri;
+            width: 100%;
+            padding: 50px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            }
+            input[type=text], textarea, select {
+            font: 35px Calibri;
+            width: 100%;
+            padding: 50px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            }
+            input[type=button]{ 
+            font: 35px Calibri;
+            width: 100%;
+            float: right;
+            cursor: pointer;
+            padding: 50px;
+            border-radius: 10px;
+            outline: none;
+            border: 1px solid black;
+            }
+            input[type=date], textarea, select {
+            font: 35px Calibri;
+            width: 100%;
+            padding: 50px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            content: "data";
+            }
+            textarea{
+                height: 200px;
+            }
         }

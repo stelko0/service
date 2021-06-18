@@ -2,78 +2,103 @@
 <html>
   <head>
     <title>Сервиз</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript" src="scripts.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div>
+    <header>
+      <h2>0.0.2v</h2>
+    </header>
+    <div class="notSupport">
       <!--Add few elements to the form-->
+      <div class="container-fluid">
+        <div class="field">
+          <!-- <input type="date" id="txtDate" name="txtDate" placeholder="Въведи дата на ремонт:" /> -->
+          <!-- <input type="text" id="txtDate" placeholder="Въведи дата на ремонт: " /> -->
+          <input
+            placeholder="Дата на ремонт:"
+            class="textbox-n"
+            type="text"
+            onfocus="(this.type='date')"
+            id="date"
+          />
+        </div>
 
-      <div>
-        <input type="date" id="txtDate" name="txtDate" placeholder="Въведи дата на ремонт:" />
-        <!-- <input type="text" id="txtDate" placeholder="Въведи дата на ремонт: " /> -->
+        <div class="field">
+          <input
+            type="text"
+            id="txtBrand"
+            placeholder="Въведи марка на автомобила:"
+          />
+        </div>
+
+        <div class="field">
+          <input
+            type="text"
+            id="txtModel"
+            placeholder="Въведи модел на автомобила:"
+          />
+        </div>
+
+        <div class="field">
+          <input
+            type="text"
+            id="licensePlate"
+            placeholder="Въведи рег. номер на автомобила:"
+          />
+        </div>
+
+        <div class="field">
+          <input
+            type="text"
+            id="engine"
+            placeholder="Въведи двигател на автомобила:"
+          />
+        </div>
+
+        <div class="field">
+          <input
+            type="number"
+            id="priceParts"
+            placeholder="Въведи цена резервни части:"
+          />
+        </div>
+
+        <div class="field">
+          <input type="number" id="priceWork" placeholder="Въведи цена труд:" />
+        </div>
+
+        <div class="field">
+          <textarea
+            id="description"
+            name="description"
+            placeholder="Въведи описание на ремонта:"
+          ></textarea>
+        </div>
+
+        <div class="field">
+          <input
+            type="button"
+            id="bt"
+            value="Запази като текстов документ"
+            onclick="saveFile()"
+          />
+        </div>
       </div>
 
-      <div>
-        <input type="text" id="txtBrand" placeholder="Въведи марка на автомобила:"
-        />
-      </div>
-
-      <div>
-        <input type="text" id="txtModel" placeholder="Въведи модел на автомобила:"
-        />
-      </div>
-
-      <div>
-        <input
-          type="text" id="licensePlate" placeholder="Въведи рег. номер на автомобила:"/>
-      </div>
-
-      <div>
-      <input
-          type="text"
-          id="engine"
-          placeholder="Въведи двигател на автомобила:"
-        />
-      </div>
-
-      <div>
-      <input
-          type="number"
-          id="priceParts"
-          placeholder="Въведи цена резервни части:"
-        />
-      </div>
-
-      <div>
-      <input
-          type="number"
-          id="priceWork"
-          placeholder="Въведи цена труд:"
-        />
-      </div>
-
-      <div>
-        <textarea
-          id="description"
-          name="description"
-          placeholder="Въведи описание на ремонта:"
-          style="height: 100px"
-        ></textarea>
-      </div>
-
-      <div>
-        <input
-          type="button"
-          id="bt"
-          value="Запази като текстов документ"
-          onclick="saveFile()"
-        />
-      </div>
+      
     </div>
-    <footer>
-      <h2>0.0.1v</h2>
-    </footer>
   </body>
 </html>
